@@ -11,6 +11,56 @@
     ></script>
   </head>
   <body>
-    <button type="button" class="btn btn-primary">This is a button</button>
+    <main>
+      <div><h2>Twist</h2></div>
+      <div class="container">
+        <h2>Sign Up</h2>
+        <form class="needs-validation">
+          <div class="mb-3">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Username"
+                required=""
+              />
+              <div class="invalid-feedback" style="width: 100%">
+                Your username is required.
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email"
+              >Email <span class="text-muted">(Optional)</span></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="you@example.com"
+            />
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+          <input
+            type="password"
+            id="inputPassword"
+            class="form-control"
+            placeholder="Password"
+            required=""
+          />
+          <a href="./public/pages/profile/index.html">Sign in</a>
+          <button class="btn btn-primary btn-block" type="submit">
+            Sign in
+          </button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
