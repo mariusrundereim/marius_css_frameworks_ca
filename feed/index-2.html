@@ -87,20 +87,21 @@
       </header>
 
       <main class="container mt-2">
-        <div class="col border border-1 border-black">
+        <div
+          class="col-sm-8 d-flex justify-content-between border border-1 border-black"
+        >
           <h1 class="fs-3">Feed</h1>
+          <button
+            type="button"
+            class="btn fw-semibold text-black border border-2"
+          >
+            Sort
+          </button>
         </div>
-        <section class="row">
-          <section class="d-flex flex-column">
+        <section>
+          <section class="d-flex flex-row">
             <!-- Content Feed-->
-            <div class="mb-2">
-              <button
-                type="button"
-                class="btn fw-semibold text-black border border-2"
-              >
-                Sort
-              </button>
-
+            <div class="mb-2 col-sm-8">
               <div class="row">
                 <!-- Example post 1-->
                 <div class="border border-dark border-opacity-25 rounded mb-4">
@@ -126,68 +127,69 @@
                 </div>
               </div>
             </div>
-          </section>
+            <section class="col-sm-5 d-sm-none d-md-block">
+              <!-- Sidebar-->
 
-          <section class="col-5 col-lg d-sm-none">
-            <!-- Sidebar-->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                New post
+              </button>
 
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              New post
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      New post
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Pariatur dolorum commodi molestiae enim consectetur facilis
-                    architecto possimus recusandae!
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">Send</button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        New post
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Pariatur dolorum commodi molestiae enim consectetur
+                      facilis architecto possimus recusandae!
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Send
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div>
-              <h2 class="fs-4">Followers</h2>
-              <div class="d-flex justify-content-between">
-                <p>Alex Dalene</p>
-                <p>Follow+</p>
+              <div>
+                <h2 class="fs-4">Followers</h2>
+                <div class="d-flex justify-content-between">
+                  <p>Alex Dalene</p>
+                  <p>Follow+</p>
+                </div>
               </div>
-            </div>
+            </section>
           </section>
         </section>
       </main>
