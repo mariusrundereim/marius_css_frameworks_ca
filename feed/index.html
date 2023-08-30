@@ -13,10 +13,10 @@
   </head>
   <body class="d-flex justify-content-between flex-column vh-100">
     <div>
-      <header>
+      <header class="sticky-top bg-white shadow-sm">
         <div class="container">
           <div
-            class="d-flex align-items-center justify-content-center justify-content-lg-start"
+            class="d-flex flex-lg-row flex-column align-items-center justify-content-center justify-content-lg-start"
           >
             <a
               href="/feed/index.html"
@@ -25,22 +25,26 @@
               <h2>Twist</h2>
             </a>
 
-            <ul
-              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-            >
-              <li>
-                <a href="/feed/index.html" class="nav-link px-2 link-secondary"
-                  >Feed</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/profile/index.html"
-                  class="nav-link px-2 link-body-emphasis"
-                  >Profile</a
-                >
-              </li>
-            </ul>
+            <nav>
+              <ul
+                class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+              >
+                <li>
+                  <a
+                    href="/feed/index.html"
+                    class="nav-link px-2 link-secondary"
+                    >Feed</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/profile/index.html"
+                    class="nav-link px-2 link-body-emphasis"
+                    >Profile</a
+                  >
+                </li>
+              </ul>
+            </nav>
 
             <form class="col-5 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
               <input
@@ -67,13 +71,10 @@
                 />
               </a>
               <ul class="dropdown-menu text-small">
-                <li>
-                  <a class="dropdown-item" href="/feed/index.html">New post</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li>
                   <a class="dropdown-item" href="/profile/index.html"
-                    >Profile</a
+                    >Settings</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
@@ -87,108 +88,48 @@
       </header>
 
       <main class="container mt-2">
-        <div class="col border border-1 border-black">
+        <div
+          class="col-sm-8 d-flex justify-content-between border border-1 border-black"
+        >
           <h1 class="fs-3">Feed</h1>
+          <button
+            type="button"
+            class="btn fw-semibold text-black border border-2"
+          >
+            Sort
+          </button>
         </div>
-        <section class="row">
-          <section class="d-flex flex-column">
+        <section class="d-flex flex-row">
+          <div class="d-none d-sm-block">
+            <h2>Followers</h2>
+          </div>
+          <div class="col-sm-6">
             <!-- Content Feed-->
             <div class="mb-2">
-              <button
-                type="button"
-                class="btn fw-semibold text-black border border-2"
-              >
-                Sort
-              </button>
-
-              <div class="row">
-                <!-- Example post 1-->
-                <div class="border border-dark border-opacity-25 rounded mb-4">
-                  <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
-                  <div class="col bg-white p-2">
-                    <h2 class="fs-5">mariusrundereim</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Incidunt ullam adipisci quidem.
-                    </p>
-                  </div>
+              <!-- Example post 1-->
+              <div class="border border-dark border-opacity-25 rounded mb-4">
+                <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
+                <div class="col bg-white p-2">
+                  <h2 class="fs-5">mariusrundereim</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Incidunt ullam adipisci quidem.
+                  </p>
                 </div>
-                <!-- Example post 1-->
-                <div class="border border-dark border-opacity-25 rounded mb-4">
-                  <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
-                  <div class="col bg-white p-2">
-                    <h2 class="fs-5">mariusrundereim</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Incidunt ullam adipisci quidem.
-                    </p>
-                  </div>
+              </div>
+              <!-- Example post 1-->
+              <div class="border border-dark border-opacity-25 rounded mb-4">
+                <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
+                <div class="col bg-white p-2">
+                  <h2 class="fs-5">mariusrundereim</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Incidunt ullam adipisci quidem.
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
-
-          <section class="col-5 col-lg d-sm-none">
-            <!-- Sidebar-->
-
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              New post
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      New post
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Pariatur dolorum commodi molestiae enim consectetur facilis
-                    architecto possimus recusandae!
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">Send</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h2 class="fs-4">Followers</h2>
-              <div class="d-flex justify-content-between">
-                <p>Alex Dalene</p>
-                <p>Follow+</p>
-              </div>
-            </div>
-          </section>
+          </div>
         </section>
       </main>
     </div>
