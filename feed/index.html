@@ -5,130 +5,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feed Page</title>
     <link rel="stylesheet" href="../dist/css/main.css" />
+
     <script
       defer
       src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
+
     <script defer src="../js/dummypost.js"></script>
   </head>
   <body class="d-flex justify-content-between flex-column vh-100">
     <div>
-      <header class="sticky-top bg-white shadow-sm">
+      <header class="sticky-top bg-white shadow-sm p-2">
         <div class="container">
-          <div
-            class="d-flex flex-lg-row flex-column align-items-center justify-content-center justify-content-lg-start"
-          >
-            <a
-              href="/feed/index.html"
-              class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
-            >
-              <h2>Twist</h2>
-            </a>
-
-            <nav>
-              <ul
-                class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-              >
-                <li>
-                  <a
-                    href="/feed/index.html"
-                    class="nav-link px-2 link-secondary"
-                    >Feed</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/profile/index.html"
-                    class="nav-link px-2 link-body-emphasis"
-                    >Profile</a
-                  >
-                </li>
-              </ul>
-            </nav>
-
-            <form class="col-5 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input
-                type="search"
-                class="form-control"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-            </form>
-
-            <div class="dropdown text-end">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
               <a
-                href="#"
-                class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                href="/feed/index.html"
+                class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
               >
-                <img
-                  src="https://github.com/mdo.png"
-                  alt="mdo"
-                  width="32"
-                  height="32"
-                  class="rounded-circle"
-                />
+                <h2>Twist</h2>
               </a>
-              <ul class="dropdown-menu text-small">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li>
-                  <a class="dropdown-item" href="/profile/index.html"
-                    >Settings</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/index.html">Sign out</a>
-                </li>
-              </ul>
+
+              <nav class="d-none d-sm-block">
+                <ul
+                  class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                >
+                  <li>
+                    <a
+                      href="/feed/index.html"
+                      class="nav-link px-2 link-secondary"
+                      >Feed</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/profile/index.html"
+                      class="nav-link px-2 link-body-emphasis"
+                      >Profile</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="d-flex flex-wrap">
+              <form
+                class="col-5 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                role="search"
+              >
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+              </form>
+
+              <div class="dropdown text-end">
+                <a
+                  href="#"
+                  class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://github.com/mdo.png"
+                    alt="mdo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle"
+                  />
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/profile/index.html"
+                      >Settings</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html">Sign out</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
       <main class="container mt-2">
-        <div
-          class="col-sm-8 d-flex justify-content-between border border-1 border-black"
-        >
+        <div>
           <h1 class="fs-3">Feed</h1>
-          <button
-            type="button"
-            class="btn fw-semibold text-black border border-2"
-          >
-            Sort
-          </button>
         </div>
         <section class="d-flex flex-row mt-2">
-          <div class="d-none d-sm-block col-6">
-            <h2>Followers</h2>
-          </div>
-          <div class="col-sm-6">
-            <!-- Content Feed-->
-            <div class="mb-2">
-              <!-- Example post 1-->
-              <div class="border border-dark border-opacity-25 rounded mb-4">
-                <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
-                <div class="col bg-white p-2">
-                  <h2 class="fs-5">mariusrundereim</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Incidunt ullam adipisci quidem.
-                  </p>
-                </div>
-              </div>
-              <!-- Example post 1-->
-              <div class="border border-dark border-opacity-25 rounded mb-4">
-                <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
-                <div class="col bg-white p-2">
-                  <h2 class="fs-5">mariusrundereim</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Incidunt ullam adipisci quidem.
-                  </p>
+          <div class="col-sm-6 mb-2">
+            <div>
+              <a
+                href="#"
+                class="d-block d-flex link-body-emphasis text-decoration-none dropdown-toggle btn btn-outline-primary"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><h3 class="fs-5">Sort</h3>
+              </a>
+
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">Trending</a></li>
+                <li><a class="dropdown-item" href="#">Latest</a></li>
+              </ul>
+            </div>
+            <div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                New post
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        New post
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Pariatur dolorum commodi molestiae enim
+                        consectetur facilis architecto possimus recusandae!
+                      </p>
+                      <div class="border border-1 border-top">
+                        <label for="upload">Image</label>
+                        <input type="text" placeholder="Upload image" />
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Send
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- Content Feed-->
+            <!-- Example post 1-->
+            <div class="border border-dark border-opacity-25 rounded mb-4">
+              <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
+              <div class="col bg-white p-2">
+                <h2 class="fs-5">mariusrundereim</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Incidunt ullam adipisci quidem.
+                </p>
+              </div>
+            </div>
+            <!-- Example post 1-->
+            <div class="border border-dark border-opacity-25 rounded mb-4">
+              <div class="col ratio ratio-1x1 bg-dark rounded-top"></div>
+              <div class="col bg-white p-2">
+                <h2 class="fs-5">mariusrundereim</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Incidunt ullam adipisci quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-sm-block col-6">
+            <h2 class="mb-2">Followers</h2>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex py-2 gap-3"
+              aria-current="true"
+            >
+              <img
+                src="https://github.com/twbs.png"
+                alt="twbs"
+                width="32"
+                height="32"
+                class="rounded-circle flex-shrink-0"
+              />
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">mariusr</h6>
+                  <p>mariusrundereim</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary">
+                  Follow
+                </button>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex py-2 gap-3"
+              aria-current="true"
+            >
+              <img
+                src="https://github.com/twbs.png"
+                alt="twbs"
+                width="32"
+                height="32"
+                class="rounded-circle flex-shrink-0"
+              />
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">mariusr</h6>
+                  <p>mariusrundereim</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary">
+                  Follow
+                </button>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex py-2 gap-3"
+              aria-current="true"
+            >
+              <img
+                src="https://github.com/twbs.png"
+                alt="twbs"
+                width="32"
+                height="32"
+                class="rounded-circle flex-shrink-0"
+              />
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">mariusr</h6>
+                  <p>mariusrundereim</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary">
+                  Follow
+                </button>
+              </div>
+            </a>
           </div>
         </section>
       </main>
