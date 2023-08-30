@@ -77,11 +77,13 @@
                   />
                 </a>
                 <ul class="dropdown-menu text-small">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
                   <li>
                     <a class="dropdown-item" href="/profile/index.html"
-                      >Settings</a
+                      >Profile</a
                     >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Settings</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
@@ -100,78 +102,81 @@
         </div>
         <section class="d-flex flex-row mt-2">
           <div class="col-sm-6 mb-2">
-            <div>
-              <a
-                href="#"
-                class="d-block d-flex link-body-emphasis text-decoration-none dropdown-toggle btn btn-outline-primary"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                ><h3 class="fs-5">Sort</h3>
-              </a>
-
-              <ul class="dropdown-menu text-small">
-                <li><a class="dropdown-item" href="#">Trending</a></li>
-                <li><a class="dropdown-item" href="#">Latest</a></li>
-              </ul>
-            </div>
-            <div>
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                New post
-              </button>
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">
-                        New post
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Pariatur dolorum commodi molestiae enim
-                        consectetur facilis architecto possimus recusandae!
-                      </p>
-                      <div class="border border-1 border-top">
-                        <label for="upload">Image</label>
-                        <input type="text" placeholder="Upload image" />
+            <div class="d-flex">
+              <div class="col-9">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary d-inline-flex align-items-center w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <h3 class="fs-6">New post</h3>
+                </button>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          New post
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
                       </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Send
-                      </button>
+                      <div class="modal-body">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Pariatur dolorum commodi molestiae enim
+                          consectetur facilis architecto possimus recusandae!
+                        </p>
+                        <div class="border border-1 border-top">
+                          <label for="upload">Image</label>
+                          <input type="text" placeholder="Upload image" />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Send
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="col-3">
+                <button
+                  class="d-block d-flex w-100 link-body-emphasis text-decoration-none dropdown-toggle btn btn-outline-primary"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <h3 class="fs-6">Sort</h3>
+                </button>
+
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#">Trending</a></li>
+                  <li><a class="dropdown-item" href="#">Latest</a></li>
+                </ul>
+              </div>
             </div>
+
             <!-- Content Feed-->
             <!-- Example post 1-->
             <div class="border border-dark border-opacity-25 rounded mb-4">
@@ -196,8 +201,8 @@
               </div>
             </div>
           </div>
-          <div class="d-none d-sm-block col-6">
-            <h2 class="mb-2">Followers</h2>
+          <div class="d-none d-sm-block col-6 ms-2">
+            <h2 class="mb-2 fs-4">Followers</h2>
 
             <a
               href="#"
