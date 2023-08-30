@@ -94,8 +94,12 @@
       </header>
 
       <main class="container mt-2">
-        <section class="d-flex flex-column align-content-center">
-          <div class="mb-5 mb-lg-5 mx-auto">
+        <section
+          class="d-flex flex-column align-content-center justify-content-center"
+        >
+          <div
+            class="mb-5 mb-lg-5 mx-auto d-flex flex-column align-content-center justify-content-center"
+          >
             <img
               src="/src/img/dummy_img_02.png"
               alt="mdo"
@@ -103,22 +107,27 @@
               height="92"
               class="rounded-circle"
             />
-            <h2 class="text-center">Username</h2>
-            <button type="button" class="btn btn-primary mt-5">Follow+</button>
+            <h2 class="text-center">username</h2>
+            <div>
+              <button type="button" class="btn btn-primary mt-5">Follow</button>
+              <button type="button" class="btn btn-primary mt-5">
+                Edit profile
+              </button>
+            </div>
           </div>
           <!--Followers Panel-->
           <div
-            class="d-flex flex-row mx-auto border border-dark border-opacity-25 rounded"
+            class="d-flex flex-row mx-auto border border-dark border-opacity-25 rounded flex-fill"
           >
-            <div class="text-center p-2 border-end flex-grow-1">
+            <div class="text-center p-2 border-end flex-fill">
               <h3 class="fs-5">Following</h3>
               <h4>3</h4>
             </div>
-            <div class="text-center p-2 flex-grow-1">
+            <div class="text-center p-2 flex-fill">
               <h3 class="fs-5">Followers</h3>
               <h4>6</h4>
             </div>
-            <div class="text-center p-2 border-start flex-grow-1">
+            <div class="text-center p-2 border-start flex-fill">
               <h3 class="fs-5">Posts</h3>
               <h4>4</h4>
             </div>

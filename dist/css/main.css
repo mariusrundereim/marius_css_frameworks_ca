@@ -99,7 +99,7 @@
   --bs-link-hover-color: #26b186;
   --bs-link-hover-color-rgb: 38, 177, 134;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  --bs-highlight-bg: #2fdda8;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -322,7 +322,7 @@ small, .small {
 }
 
 mark, .mark {
-  padding: 0.1875em;
+  padding: 0.1875em 0.2em;
   background-color: var(--bs-highlight-bg);
 }
 
