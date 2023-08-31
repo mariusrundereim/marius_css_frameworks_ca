@@ -1,7 +1,15 @@
 @import "./icons";
 
-$primary: #2fdda8;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+$font-family-sans-serif: "Poppins", sans-serif;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Colors
+$primary: #20dea5;
 $yellow-100: #fefefe;
 
+// Marking
 $mark-padding: 0.1875em 0.2em;
 $mark-bg: $primary;
